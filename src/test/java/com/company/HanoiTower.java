@@ -46,7 +46,7 @@ public class HanoiTower {
     @Test
     public  void main() {
         Stopwatch stopwatch = new Stopwatch();
-        hanoiTower(10, 'A', 'B', 'C');
+        hanoiTower(4, 'A', 'B', 'C');
         System.out.println(stopwatch.elapsedTime());
     }
 

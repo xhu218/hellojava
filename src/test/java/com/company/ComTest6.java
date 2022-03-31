@@ -3,6 +3,46 @@ package com.company;
 import org.junit.Test;
 
 public class ComTest6 {
+    public static int getValue(int i) {
+
+        int result = 0;
+
+        switch (i) {
+
+            case 1:
+
+                result = result + i;
+
+            case 2:
+
+                result = result + i * 2;
+
+            case 3:
+
+                result = result + i * 3;
+
+        }
+
+        return result;
+
+    }
+
+    @Test
+    public void main() {
+        Thread t = new Thread() {
+            public void run() {
+                pong();
+            }
+        };
+        t.start();
+        System.out.print("ping");
+
+    }
+
+    static void pong() {
+        System.out.print("pong");
+    }
+
     @Test
     public void Test1() {
         int a = 2;
@@ -72,10 +112,22 @@ public class ComTest6 {
 
     }
 
+    @Test
+    public void Test5() {
+
+    }
 
     @Test
-    public  void Test5(){
+    public void Test6() {
+        System.out.println(getValue(2));
 
+    }
+
+    @Test
+    public void Test7() {
+        String str1 = "hello";
+        String str2 = "he" + "llo";
+        System.err.println(str1 == str2);
     }
 
 
