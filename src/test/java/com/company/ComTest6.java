@@ -130,5 +130,12 @@ public class ComTest6 {
         System.err.println(str1 == str2);
     }
 
+    @Test
+    public void Test8(){
+        String str1 = "wfg";
+        System.out.println(str1.hashCode());
+
+    }
+
 
 }
