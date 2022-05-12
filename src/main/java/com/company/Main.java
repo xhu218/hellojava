@@ -1,9 +1,13 @@
 package com.company;
-
 public class Main  {
 
     public static void main(String[] args) {
+
+
+       // SpringApplication.run(Main.class, args);
 	// write your code here
+
+
         System.out.println("hello wfg");
         Student stu = new Student("wfg",11);
         //stu.printStudent();
@@ -21,6 +25,8 @@ public class Main  {
             System.out.print(arr1[i] + " ");
 
         }
+
+
 
 
 

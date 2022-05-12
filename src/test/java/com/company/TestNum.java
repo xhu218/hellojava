@@ -35,5 +35,30 @@ public class TestNum {
         c2.exp(a, b, c);                     //调用exp方法（穷举法）计算
     }
 
+    @Test
+    public void Test2()
+    {
+
+        int[] arr = new int[64 * 1024 * 1024];
+
+        long startMili = System.currentTimeMillis();// 当前时间对应的毫秒数
+        System.out.println("/**开始 " + startMili);
+        for (int i = 0; i < arr.length; i++) arr[i] *= 3;
+        long endMili = System.currentTimeMillis();//结束时间
+        System.out.println("/**结束 s" + endMili);
+        System.out.println("/**总耗时为：" + (endMili - startMili) + "毫秒");
+
+        long startMili1 = System.currentTimeMillis();// 当前时间对应的毫秒数
+        System.out.println("/**开始 " + startMili1);
+        for (int i = 0; i < arr.length; i += 16) arr[i] *= 3;
+        long endMili1 = System.currentTimeMillis();//结束时间
+        System.out.println("/**结束 s" + endMili1);
+        System.out.println("/**总耗时为：" + (endMili1 - startMili1) + "毫秒");
+
+
+
+
+    }
+
 
 }
