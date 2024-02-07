@@ -31,8 +31,8 @@ dp[i][k] = max(value[i] + dp[i-1][k-weight[i]], dp[i-1][k])
                 // 不存放 i 号物品
                 int valueWithout_i = dp[i - 1][k];
                 dp[i][k] = Math.max(valueWith_i, valueWithout_i);
-                System.out.println("i = "+i+" k = "+k);
-                System.out.println("dp["+i+"]["+k+"]="+dp[i][k]);
+                System.out.println("i = " + i + " k = " + k);
+                System.out.println("dp[" + i + "][" + k + "]=" + dp[i][k]);
             }
         }
 

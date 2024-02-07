@@ -42,7 +42,7 @@ public class Lesson5_1 {
 
     @Test
     public void Test() {
-        int totalReward = 10;
+        int totalReward = 5;
         Lesson5_1.get(totalReward, new ArrayList<Long>());
 
     }

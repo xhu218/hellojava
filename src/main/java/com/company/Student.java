@@ -1,8 +1,11 @@
 package com.company;
 
 
-public  class  Student
+import java.io.Serializable;
+
+public  class  Student implements Serializable
 {
+    private static final long serialVersionUID = -5809452578272945389L;
     private  String Name;
     private  int Age;
 

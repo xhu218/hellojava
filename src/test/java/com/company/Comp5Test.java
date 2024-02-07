@@ -10,12 +10,12 @@ package com.company;
  利用穷举法计算三个数的最小公倍数和最大公约数
  */
 
-class Calculate{
+public class Comp5Test{
     private int num1;   //需要求解的第一个数据
     private int num2;   //需要求解的第二个数据
 
     //构造方法
-    public Calculate() {}
+    public Comp5Test() {}
 
     //相减法计算两个数的最大公约数和最小公倍数
     void sub(int num1, int num2) {
@@ -33,6 +33,8 @@ class Calculate{
         System.out.println("利用相减法计算所得的最小公倍数为:"+ x*y/num1);    //最小公倍数
         System.out.println("---------------------------------");
     }
+
+
 
     //穷举法求解两个数的最大公约数和最小公倍数
     void exp(int num1, int num2) {
@@ -105,5 +107,6 @@ class Calculate{
         System.out.println("计算三个数所得的最小公倍数为:"+j);
     }
 }
+
 
 
